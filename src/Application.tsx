@@ -6,6 +6,8 @@ import {
     RouteChildrenProps,
 } from 'react-router-dom'
 import routes from './config/routes'
+import UserContextProvider from './contexts/UserContextProvider'
+
 import { Provider } from 'react-redux'
 import { store } from '@store/store'
 import styles from './App.module.scss'
@@ -18,32 +20,34 @@ type Props = {
 
 const Application: React.FunctionComponent<{}> = () => {
     return (
-        <Provider store={store}>
-            <div className={classNames(styles.appContainer)}>
-                <BrowserRouter>
-                    <Switch>
-                        {routes.map((route, index) => {
-                            return (
-                                <Route
-                                    key={index}
-                                    path={route.path}
-                                    exact={route.exact}
-                                    render={(
-                                        props: RouteChildrenProps<any>
-                                    ) => (
-                                        <route.component
-                                            name={route.name}
-                                            {...props}
-                                            {...route.props}
-                                        />
-                                    )}
-                                />
-                            )
-                        })}
-                    </Switch>
-                </BrowserRouter>
-            </div>
-        </Provider>
+        <UserContextProvider>
+            <Provider store={store}>
+                <div className={classNames(styles.appContainer)}>
+                    <BrowserRouter>
+                        <Switch>
+                            {routes.map((route, index) => {
+                                return (
+                                    <Route
+                                        key={index}
+                                        path={route.path}
+                                        exact={route.exact}
+                                        render={(
+                                            props: RouteChildrenProps<any>
+                                        ) => (
+                                            <route.component
+                                                name={route.name}
+                                                {...props}
+                                                {...route.props}
+                                            />
+                                        )}
+                                    />
+                                )
+                            })}
+                        </Switch>
+                    </BrowserRouter>
+                </div>
+            </Provider>
+        </UserContextProvider>
     )
 }
 
