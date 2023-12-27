@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .hover_active {
+      @apply bg-gradient-to-r from-[#FA5252] to-[#DD2476];
+  }
+}
+@layer utilities {
+  .active {
+      @apply bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-slate-50;
+  }
+}
+
 
 body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Inter", sans-serif;
   width: 100%;
+  /* background-color: #edf2f7; */
+  height: 100vh;
 }

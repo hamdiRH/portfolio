@@ -1,4 +1,3 @@
-import React from 'react'
 import { useAppDispatch, useAppSelector } from '@store/hooks'
 import {
     selectCount,
@@ -11,7 +10,7 @@ import { useTranslation } from 'react-i18next'
 import styles from './styles.module.scss'
 
 const CounterComponent = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation()
     const dispatch: any = useAppDispatch()
     const value: number = useAppSelector(selectCount)
     const handleAction = (action: ECounterEventType) => {
@@ -51,7 +50,7 @@ const CounterComponent = () => {
                     <button
                         onClick={() => handleAction(ECounterEventType.RESET)}
                     >
-                       {t('resetLabel')}
+                        {t('resetLabel')}
                     </button>
                 </div>
             </div>
