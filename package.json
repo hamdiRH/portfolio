@@ -32,10 +32,12 @@
     "react-feather": "^2.0.10",
     "react-highlight": "^0.15.0",
     "react-i18next": "^11.14.2",
+    "react-icons": "^4.12.0",
     "react-markdown": "^9.0.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "5.2.0",
     "sass": "^1.43.4",
+    "swiper": "9",
     "vite-plugin-sass-dts": "^1.1.18"
   },
   "devDependencies": {

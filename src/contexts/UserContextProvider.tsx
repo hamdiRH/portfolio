@@ -23,7 +23,6 @@ export function UserContextProvider({ children }: any) {
 
             try {
                 const { data } = await auth.user()
-                console.log(data)
                 dispatch({ type: VERIFY_AUTH_SUCCESS, payload: data })
             } catch {
                 dispatch({ type: VERIFY_AUTH_FAILURE })

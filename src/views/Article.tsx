@@ -51,10 +51,10 @@ export function Article() {
                             </div>
                             <div className="w-full md:w-2/3 p-6 bg-white shadow rounded break-words">
                                 <h1 className="font-bold text-4xl md:text-6xl leading-tight">
-                                    {article.title}
+                                    {article?.title}
                                 </h1>
                                 <div className="flex justify-start space-x-4 mb-10">
-                                    <p>By {article.user?.displayName}</p>
+                                    <p>By {article?.user?.displayName}</p>
                                     <span>—</span>
                                     <p>
                                         {moment(article.createdAt).format(
@@ -62,7 +62,7 @@ export function Article() {
                                         )}
                                     </p>
                                 </div>
-                                <Markdown source={article.body} />
+                                <Markdown source={article?.body} />
                             </div>
                         </React.Fragment>
                     ) : (

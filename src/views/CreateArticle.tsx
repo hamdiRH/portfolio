@@ -113,7 +113,7 @@ export function CreateArticle() {
                                 )}
                             </h1>
                             <div className="flex justify-start space-x-4 mb-10">
-                                <p>By {user.data.displayName}</p>
+                                <p>By {user?.data?.displayName}</p>
                                 <span>—</span>
                                 <p>{moment(new Date()).format('MMMM YYYY')}</p>
                             </div>

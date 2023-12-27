@@ -15,14 +15,12 @@ function Home() {
 
     const fetchArticles = async () => {
         const { data } = await request.get('/articles')
-
-        setArticles(data.docs)
+        if (data?.docs?.length > 0) setArticles(data.docs)
     }
 
     useEffect(() => {
         fetchArticles()
     }, [])
-    return <h1>Hello</h1>
 
     return (
         <React.Fragment>
