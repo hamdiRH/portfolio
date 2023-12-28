@@ -6,7 +6,7 @@ import 'highlight.js/styles/atom-one-dark.css'
 
 import request from '../services/api'
 
-import Markdown from '../components/Markdown'
+// import Markdown from '../components/Markdown'
 
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
@@ -62,7 +62,7 @@ export function Article() {
                                         )}
                                     </p>
                                 </div>
-                                <Markdown source={article?.body} />
+                                {/* <Markdown source={article?.body} /> */}
                             </div>
                         </React.Fragment>
                     ) : (

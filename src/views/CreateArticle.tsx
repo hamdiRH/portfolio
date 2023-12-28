@@ -6,7 +6,7 @@ import { UserContext } from '../contexts/UserContextProvider'
 
 import request from '../services/api'
 
-import Markdown from '../components/Markdown'
+// import Markdown from '../components/Markdown'
 
 import Navbar from '../components/Navbar'
 import Container from '../components/Container'
@@ -117,7 +117,7 @@ export function CreateArticle() {
                                 <span>—</span>
                                 <p>{moment(new Date()).format('MMMM YYYY')}</p>
                             </div>
-                            <Markdown source={body} />
+                            {/* <Markdown source={body} /> */}
                         </div>
                     </div>
                 </div>
