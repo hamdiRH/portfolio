@@ -39,7 +39,7 @@ export function CreateArticle() {
     }
 
     return (
-        <React.Fragment>
+        <>
             <Navbar />
             <Container extraClasses="pt-32">
                 <div className="w-full">
@@ -122,7 +122,7 @@ export function CreateArticle() {
                     </div>
                 </div>
             </Container>
-        </React.Fragment>
+        </>
     )
 }
 

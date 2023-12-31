@@ -27,25 +27,29 @@ const Sidebar = () => {
                     </div>
                     <div className="flex justify-center space-x-3">
                         <a
+                            target="_blank"
                             href="https://www.facebook.com/uzumaki.hamdi/"
                             className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1773EA] hover:text-slate-50"
                         >
                             <FaFacebookF />
                         </a>
                         <a
+                            target="_blank"
                             href="https://twitter.com/hamdi59494937"
                             className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1C9CEA] hover:text-slate-50"
                         >
                             <AiOutlineTwitter />
                         </a>
                         <a
-                            href="/"
+                            target="_blank"
+                            href="https://dribbble.com/Caesar26"
                             className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#e14a84] hover:text-slate-50"
                         >
                             <AiOutlineDribbble />
                         </a>
                         <a
-                            href="/"
+                            target="_blank"
+                            href="https://www.linkedin.com/in/hamdi-rahal/"
                             className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#0072b1] hover:text-slate-50"
                         >
                             <RiLinkedinFill />
@@ -64,7 +68,7 @@ const Sidebar = () => {
                                     className="transition-all duration-100 hover:text-primary"
                                     href="tel:+8801616639307"
                                 >
-                                    +123 456 7890
+                                    +216 23 695 854
                                 </a>
                             </div>
                         </li>
@@ -77,7 +81,7 @@ const Sidebar = () => {
                                     Location
                                 </span>
                                 <span className="transition-all duration-100">
-                                    Hong kong china
+                                    Ben arous, tunisia
                                 </span>
                             </div>
                         </li>
@@ -93,7 +97,7 @@ const Sidebar = () => {
                                     className="transition-all duration-100 hover:text-primary"
                                     href="mailto:example@mail.com"
                                 >
-                                    example@mail.com
+                                    hamdirahal@gmail.com
                                 </a>
                             </div>
                         </li>
@@ -106,7 +110,7 @@ const Sidebar = () => {
                                     Birthday
                                 </span>
                                 <span className="transition-all duration-100 ">
-                                    May 27, 1990
+                                    Jul 26, 1991
                                 </span>
                             </div>
                         </li>
