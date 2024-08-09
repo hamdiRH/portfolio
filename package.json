@@ -14,7 +14,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.3",
     "chart.js": "^4.4.3",
-    "mongodb": "^6.8.0",
+    "mongodb": "^6.0.0",
     "mongodb-adapter": "^0.0.4",
     "mongoose": "^8.5.2",
     "next": "14.2.5",
